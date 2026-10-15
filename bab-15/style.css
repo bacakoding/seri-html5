@@ -1,0 +1,116 @@
+/* Gaya seluruh situs. Dibangun bertahap dari bab 11 sampai 14. */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: Georgia, serif;
+  color: #3b2a1e;
+  margin: 0;
+  padding: 16px;
+  background-color: #fffdf9;
+}
+
+.navigasi-atas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #6b4226;
+}
+
+.logo {
+  width: 64px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu a {
+  color: #6b4226;
+}
+
+.kartu-baris {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.kartu {
+  flex: 1 1 200px;
+  padding: 16px;
+  border: 1px solid #6b4226;
+  border-radius: 8px;
+  background-color: #fffaf3;
+  box-sizing: border-box;
+}
+
+.judul-bagian {
+  color: #6b4226;
+}
+
+.harga {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 480px;
+}
+
+th, td {
+  border: 1px solid #6b4226;
+  padding: 8px;
+  text-align: left;
+}
+
+form p {
+  margin: 0 0 12px 0;
+}
+
+form label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+form input, form select, form textarea {
+  max-width: 320px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer {
+  margin-top: 24px;
+  padding-top: 8px;
+  border-top: 1px solid #6b4226;
+  font-size: 0.9em;
+}
+
+@media (min-width: 601px) {
+  .menu {
+    flex-direction: row;
+  }
+  body {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .logo {
+    width: 48px;
+  }
+}

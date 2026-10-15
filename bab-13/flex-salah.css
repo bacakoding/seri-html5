@@ -1,0 +1,8 @@
+/* Versi salah: menu ditampilkan sebagai blok vertikal, kartu tidak sejajar */
+.menu li {
+  display: block;
+}
+.kartu {
+  display: block;
+  width: 400px;
+}

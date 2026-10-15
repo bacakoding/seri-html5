@@ -1,0 +1,10 @@
+/* Versi salah: padding, border, dan margin dicampur tanpa kendali */
+.kartu {
+  margin: 0;
+  padding: 0;
+}
+.kartu p {
+  margin: 20px;
+  padding: 20px;
+  border: 5px solid red;
+}

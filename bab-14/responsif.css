@@ -1,0 +1,47 @@
+/* Gambar tidak pernah lebih lebar dari kontainernya */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo {
+  width: 96px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+}
+
+.kartu-baris {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.kartu {
+  flex: 1 1 200px;
+  padding: 16px;
+  border: 1px solid #6b4226;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Layar sempit (ponsel): menu ditumpuk, logo lebih kecil */
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .logo {
+    width: 64px;
+  }
+
+  body {
+    padding: 8px;
+  }
+}

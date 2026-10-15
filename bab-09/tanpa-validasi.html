@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pesan Tempat tanpa validasi - Kedai Kopi Senja</title>
+  </head>
+  <body>
+    <h1>Pesan Tempat</h1>
+    <form action="terima.html" method="get" novalidate>
+      <p>
+        <label for="nama">Nama lengkap</label>
+        <input type="text" id="nama" name="nama" required>
+      </p>
+      <p>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </p>
+      <p>
+        <label for="jumlah">Jumlah tamu</label>
+        <input type="number" id="jumlah" name="jumlah">
+      </p>
+      <button type="submit">Kirim pesanan</button>
+    </form>
+  </body>
+</html>

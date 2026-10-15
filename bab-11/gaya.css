@@ -1,0 +1,21 @@
+/* Selector elemen: berlaku untuk semua <p> */
+p {
+  font-family: Georgia, serif;
+  color: #3b2a1e;
+}
+
+/* Selector kelas: hanya elemen dengan class="judul-bagian" */
+.judul-bagian {
+  color: #6b4226;
+  border-bottom: 2px solid #6b4226;
+}
+
+/* Selector kelas pada elemen tertentu: hanya <p class="harga"> */
+p.harga {
+  font-weight: bold;
+}
+
+/* Selector id: hanya elemen dengan id="promo" */
+#promo {
+  background-color: #f5e6d3;
+}

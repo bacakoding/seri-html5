@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pesan Tempat - Kedai Kopi Senja</title>
+  </head>
+  <body>
+    <h1>Pesan Tempat</h1>
+    <form action="terima.html" method="get">
+      <p>
+        <label for="nama">Nama lengkap</label>
+        <input type="text" id="nama" name="nama">
+      </p>
+      <p>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+      </p>
+      <p>
+        <label for="jumlah">Jumlah tamu</label>
+        <input type="number" id="jumlah" name="jumlah">
+      </p>
+      <p>
+        <label for="tanggal">Tanggal kunjungan</label>
+        <input type="date" id="tanggal" name="tanggal">
+      </p>
+      <p>
+        <label for="menu">Pilih menu utama</label>
+        <select id="menu" name="menu">
+          <option value="kopi-senja">Kopi senja</option>
+          <option value="kopi-susu">Kopi susu gula aren</option>
+        </select>
+      </p>
+      <p>
+        <label for="catatan">Catatan</label>
+        <textarea id="catatan" name="catatan" rows="3"></textarea>
+      </p>
+      <p>
+        <input type="checkbox" id="setuju" name="setuju" value="ya">
+        <label for="setuju">Saya setuju dihubungi untuk konfirmasi</label>
+      </p>
+      <button type="submit">Kirim pesanan</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pesan tempat di Kedai Kopi Senja. Isi formulir dan kami akan menghubungi untuk konfirmasi.">
+    <title>Pesan Tempat - Kedai Kopi Senja</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="navigasi-atas">
+      <img src="kopi.svg" alt="Logo Kedai Kopi Senja" class="logo">
+      <h1>Pesan Tempat</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="jadwal.html">Jadwal</a></li>
+          <li><a href="pesan.html">Pesan tempat</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form action="terima.html" method="get">
+        <p>
+          <label for="nama">Nama lengkap</label>
+          <input type="text" id="nama" name="nama" required minlength="3">
+        </p>
+        <p>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+          <label for="telepon">Nomor telepon</label>
+          <input type="tel" id="telepon" name="telepon" pattern="[0-9]{10,13}" title="Isi 10 sampai 13 angka, tanpa spasi atau tanda hubung" required>
+        </p>
+        <p>
+          <label for="jumlah">Jumlah tamu (1 sampai 8)</label>
+          <input type="number" id="jumlah" name="jumlah" min="1" max="8" step="1" required>
+        </p>
+        <p>
+          <label for="tanggal">Tanggal kunjungan</label>
+          <input type="date" id="tanggal" name="tanggal" required>
+        </p>
+        <p>
+          <input type="checkbox" id="setuju" name="setuju" value="ya" required>
+          <label for="setuju">Saya setuju dihubungi untuk konfirmasi</label>
+        </p>
+        <button type="submit">Kirim pesanan</button>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 Kedai Kopi Senja</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+/* Setiap kartu: isi dijauhkan dari tepi (padding), tepi terlihat (border), jarak ke kartu lain (margin) */
+.kartu {
+  padding: 16px;
+  border: 1px solid #6b4226;
+  border-radius: 8px;
+  margin: 16px;
+  background-color: #fffaf3;
+}
+
+/* Margin atas paragraf dibuat nol supaya jarak hanya diatur oleh kartu */
+.kartu p {
+  margin: 0 0 8px 0;
+}
+
+.harga {
+  font-weight: bold;
+}

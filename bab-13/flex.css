@@ -1,0 +1,28 @@
+/* Menu horizontal: item menu berjajar ke samping */
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  gap: 16px;
+}
+
+/* Kartu sejajar, dengan jarak yang sama antar-kartu */
+.kartu-baris {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.kartu {
+  flex: 1 1 200px;
+  padding: 16px;
+  border: 1px solid #6b4226;
+  border-radius: 8px;
+  background-color: #fffaf3;
+  box-sizing: border-box;
+}
+
+.harga {
+  font-weight: bold;
+}
