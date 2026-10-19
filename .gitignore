@@ -1,0 +1,9 @@
+# Artefak build dan data runtime. Jangan di-commit.
+dist/
+data.json
+data.json.tmp
+node_modules/
+
+# Catatan internal seri. Tidak boleh masuk repo publik.
+_seri.md
+**/_seri.md
